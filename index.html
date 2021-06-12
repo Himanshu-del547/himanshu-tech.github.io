@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Himanshu</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="manifest" href="manifest.json" />
    </head>
 <body>
     <header>
@@ -22,10 +23,16 @@
         </div>
     </header>
 
-    <img src="img.jpg">
-    <img src="img3.jpg">
-    <img src="img4.jpg">
-    <img src="img5.jpg">
-    <img src="img6.jpg">
+    <img src="./icons/img.jpg">
+    <img src="./icons/img3.jpg">
+    <img src="./icons/img4.jpg">
+    <img src="./icons/img5.jpg">
+    <img src="./icons/img6.jpg">
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js')
+        }
+    </script>
 </body>
 </html>
